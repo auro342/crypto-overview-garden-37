@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Asset from "./pages/Asset";
+import ThreeD from "./pages/ThreeD";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -19,6 +20,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/asset/:id" element={<Asset />} />
+          <Route path="/3d" element={<ThreeD />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
