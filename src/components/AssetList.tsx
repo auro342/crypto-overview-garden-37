@@ -33,13 +33,6 @@ export default function AssetList() {
         <h1 className="text-7xl font-black tracking-tight border-b-8 border-brutal-white pb-2 text-brutal-white">
           CRYPTO<span className="text-brutal-red">VERSE</span>
         </h1>
-        <button
-          onClick={() => navigate('/3d')}
-          className="flex items-center gap-2 px-6 py-3 bg-brutal-white text-brutal-black hover:bg-brutal-red hover:text-brutal-white transition-colors duration-200 text-xl font-bold"
-        >
-          <ArrowUpRight className="w-6 h-6" />
-          3D View
-        </button>
       </div>
 
       <div className="grid gap-6">
