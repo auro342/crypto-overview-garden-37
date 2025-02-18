@@ -2,7 +2,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { fetchAssets, formatMarketCap, formatPrice } from "@/lib/api";
 import { useNavigate } from "react-router-dom";
-import { ArrowUpRight, Cube } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 export default function AssetList() {
   const navigate = useNavigate();
@@ -37,7 +37,7 @@ export default function AssetList() {
           onClick={() => navigate('/3d')}
           className="flex items-center gap-2 px-6 py-3 bg-brutal-black text-brutal-white hover:bg-brutal-red transition-colors duration-200 text-xl font-bold"
         >
-          <Cube className="w-6 h-6" />
+          <ArrowUpRight className="w-6 h-6" />
           3D View
         </button>
       </div>
